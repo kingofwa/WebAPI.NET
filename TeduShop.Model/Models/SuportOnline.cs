@@ -10,26 +10,37 @@ using TeduShop.Model.Abstrack;
 namespace TeduShop.Model.Models
 {
     [Table("SuportOnlines")]
-    public class SuportOnline :Auditable
+    public class SuportOnline 
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { set; get; }
 
         [Required]
+        [MaxLength(50)]
         public string Name { set; get; }
 
+        [MaxLength(50)]
         public string Department { set; get; }
 
+        [MaxLength(50)]
         public string Skype { set; get; }
 
+        [MaxLength(50)]
         public string Mobile { set; get; }
 
+        [MaxLength(50)]
         public string Email { set; get; }
 
+        [MaxLength(50)]
         public string Yahoo { set; get; }
 
+        [MaxLength(50)]
         public string Facebook { set; get; }
 
+        [MaxLength(50)]
+        public bool Status { set; get; }
+
+        public int? DisplayOrder { set; get; }
     }
 }

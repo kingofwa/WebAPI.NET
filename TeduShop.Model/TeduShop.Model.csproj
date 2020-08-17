@@ -50,8 +50,8 @@
   <ItemGroup>
     <Compile Include="Abstrack\Auditable.cs" />
     <Compile Include="Abstrack\IAuditable.cs" />
-    <Compile Include="Models\Oder.cs" />
-    <Compile Include="Models\OderDetail.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\Page.cs" />
     <Compile Include="Models\Post.cs" />
     <Compile Include="Models\PostCategory.cs" />

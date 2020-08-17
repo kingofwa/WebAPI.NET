@@ -15,6 +15,13 @@ namespace TeduShop.Model.Models
         public int PostID { set; get; }
 
         [Key]
+        [Column(TypeName= "varchar")]
         public int TagID { set; get; }
+
+        [ForeignKey("PostID")]
+        public virtual Post Post { set; get; }
+
+        [ForeignKey("TagID")]
+        public virtual Tag Tag { set; get; }
     }
 }

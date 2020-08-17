@@ -2,18 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TeduShop.Model.Abstrack;
 
 namespace TeduShop.Model.Models
 {
     [Table("Slides")]
-    class Slide 
+    public class Slide 
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // id tu tang (max 2ty)
         public int ID { set; get; }
 
         [Required]

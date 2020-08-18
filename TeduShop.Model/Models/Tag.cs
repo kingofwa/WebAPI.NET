@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TeduShop.Model.Models
@@ -10,7 +8,7 @@ namespace TeduShop.Model.Models
     {
         [Key]
         [MaxLength(50)]
-        public int ID { set; get; }
+        public string ID { set; get; }
 
         [MaxLength(50)]
         [Required]
@@ -19,6 +17,5 @@ namespace TeduShop.Model.Models
         [MaxLength(50)]
         [Required]
         public string Type { set; get; }
-
     }
 }

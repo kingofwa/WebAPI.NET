@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TeduShop.Model.Abstrack;
 
 namespace TeduShop.Model.Models
 {
     [Table("Slides")]
-    class Slide 
+    public class Slide
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -27,9 +21,9 @@ namespace TeduShop.Model.Models
         public string Image { set; get; }
 
         [MaxLength(256)]
-        public string URL { set; get; }
+        public string Url { set; get; }
 
-        public int? DislayOrder { set; get; }
+        public int? DisplayOrder { set; get; }
 
         public bool Status { set; get; }
     }
